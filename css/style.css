@@ -1,137 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200&display=swap');
 
-/* Página Home*/
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*
 
-.titulo-principal {
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-    clear: left;
-} 
+/* CSS da página Home*/
 
-.principal {
-    padding: 3em 0;
-    background: #FEFEFE;
-    width: 940px;
-    margin: 0 auto;
-}
+/*CABECALHO*/
 
-.principal p {
-    margin: 0 0 1em;
-}
-
-.principal strong {
-    font-weight: bold;
-    font-style: italic;
-}
-
-.mapa {
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888);
-}
-
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
-}
-
-.mapa-conteudo {
-    width: 940px;
-    margin: 0 auto;
-}
-
-.beneficios {
-    padding: 3em 0;
-    background: #888888;
-}
-
-.conteudo-beneficios {
-    width: 640px;
-    margin: 0 auto;
-}
-
-.lista-beneficios {
-    width: 40%; 
-    display: inline-block;
-    vertical-align: top;
-}
-
-.itens {
-    line-height: 1.5;
-}
-
-.itens:before {
-    content: "★ ";
-}
-
-.imagem-beneficios {
-    width: 60%;
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 10px 10px black;
-}
-
-.imagem-beneficios:hover {
-    opacity: 0.3;
-}
-
-.utensilios {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-.video {
-    width: 560px;
-    margin: 2em auto;
-
-}
-
-@media screen and (max-width: 480px) {
-
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-        width: auto;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-
-    .lista-beneficios, .imagem-beneficios {
-        width: 100%;
-    }
-}
-
-
-/* Página de Produtos*/
-
-header {
+#cabecalho {
     background: #BBBBBB;
     padding: 20px 0;
 }
 
-.caixa {
+.container-cabecalho {
     position: relative;
     width: 940px;
     margin: 0 auto;
 }
 
-nav {
+.logo {
+    width: 110px;
+}
+
+.nav-cabecalho {
     position: absolute;
-    top: 110px;
+    top: 65px;
     right: 0;
 }
 
-nav li{
+.nav-cabecalho li{
     display: inline;
     margin: 0 0 0 15px;
 }
 
-nav a {
+.nav-cabecalho a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -140,10 +46,145 @@ nav a {
 
 }
 
-nav a:hover {
+.nav-cabecalho a:hover {
     color: #C78C19;
     text-decoration: underline;
 }
+
+/*CAPA*/
+
+.container-capa {
+    width: auto;
+}
+
+.imagem-capa {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+/*SOBRE A BARBEARIA*/
+
+#sobre {
+    padding-top: 4em;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-padrao {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-family: 'Bebas Neue', cursive;
+} 
+
+.imagem-utensilios {
+    width: 250px;
+    height: 185px;
+    float: left;
+    margin: 0 25px 20px 0;
+}
+
+#sobre p {
+    margin: 0 0 1em;
+}
+
+#sobre strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*ESTABELECIMENTO*/
+
+#estabelecimento {
+    padding: 4em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.paragrafo-padrao {
+    margin: 0 200px 2em 200px;
+    text-align: center;
+}
+
+.mapa-responsivo {
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+
+.mapa-responsivo iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*BENEFICIOS*/
+
+#beneficios {
+    background: #888888;
+}
+
+.container-beneficios {
+    margin: 0 200px;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+.itens {
+    line-height: 2.0;
+}
+
+.itens:before {
+    content: "★ ";
+}
+
+.imagem-beneficios {
+    width: 50%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px black;
+    margin-bottom: 50px;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+/*VENHA CONHECER*/
+
+#videoApresentacao {
+    padding-top: 50px;
+}
+
+.container-video {
+    width: 560px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+#rodape {
+    text-align: center;
+    background: url(https://images.pexels.com/photos/5853391/pexels-photo-5853391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    padding: 20px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Página de Produtos*/
 
 .produtos {
     width: 940px;
@@ -190,27 +231,20 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.rodape {
-    text-align: center;
-    background: url("bg.jpg");
-    padding: 40px 0;
-}
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px;
-}
-
 /* Página de Contato*/
 
 .container-cor {
     background-color: #888888;
 }
 
+.container-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 form {
     margin: 40px 0px;
-    padding-left: 50px;
 }
 
 form label, legend {
@@ -225,9 +259,8 @@ form label, legend {
 
 .input-padrao{
     display: block;
-    margin: 0px 0px 10px;
     padding: 15px 20px;
-    width: 50%;
+    width: 60%;
     border: 2px solid #000;
     border-radius: 5px;
 }
@@ -275,4 +308,21 @@ td, th {
 
 /* Responsivo */
 
+@media screen and (max-width: 480px) {
 
+    .container-cabecalho, #sobre, .container-beneficios, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
