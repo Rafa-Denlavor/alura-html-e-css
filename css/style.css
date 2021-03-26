@@ -172,6 +172,8 @@
     padding: 2em 0;
 }
 
+/*RODAPE*/
+
 #rodape {
     text-align: center;
     background: url(https://images.pexels.com/photos/5853391/pexels-photo-5853391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
@@ -184,7 +186,8 @@
     margin: 20px;
 }
 
-/* Página de Produtos*/
+/* Css da página de Produtos*/
+
 
 .produtos {
     width: 940px;
@@ -232,55 +235,79 @@
 }
 
 /* Página de Contato*/
-
-.container-cor {
-    background-color: #888888;
+    
+.background-contato {
+    position: absolute;
+    width: 100%;
+    opacity: 20%;
+    object-fit: cover;
 }
 
-.container-formulario {
+#formulario {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
 }
 
-form {
-    margin: 40px 0px;
+.container-formulario {
+    margin: 40px 0;
+}
+
+.margin-zero {
+    margin: 0;
 }
 
 form label, legend {
     display: block;
-    margin: 0px 0px 10px;
+    padding-bottom: 10px;
 }
 
-.font-estilo {
+.subtitulo {
     font-size: 18px;
-    font-weight: bold;
+    padding-top: 15px;
 }
 
 .input-padrao{
     display: block;
     padding: 15px 20px;
-    width: 60%;
+    width: 100%;
     border: 2px solid #000;
     border-radius: 5px;
 }
 
+.border-none {
+    border: none;
+}
+
+.selecao-estilo {
+    width: 50%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+
 .checkbox {
-    margin: 20px 0px;
+    margin: 10px 0px;
+}
+
+.container-atendimento {
+    padding-top: 25px;
+    text-align: center;
 }
 
 .enviar {
-    width: 40%;
-    padding: 10px;
-    background: orange;
+    width: 100%;
+    padding: 20px;
+    background: green;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px; 
+    font-size: 17px;
+    border: inherit;
+    border-radius: 25px;
     transition: 1s all;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 
 .enviar:hover {
@@ -289,8 +316,14 @@ form label, legend {
     
 }
 
-table {
-    margin: 20px 40px;
+.margin-bottom {
+    margin-bottom: 25px;
+}
+
+.tabela-horario {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 thead {

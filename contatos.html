@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="manifest" href="json/site.webmanifest">
 </head>
-<body class="container-cor">
+<body>
     <header id="cabecalho">
         <div class="container-cabecalho">
             <h1><img class="logo" src="imagens/logo.png"></h1>
@@ -24,70 +24,79 @@
         </div>
     </header>
     <main>
-        <section id="formulario">
-            <h2 class="titulo-padrao">Entre em contato conosco!</h2>
-            <div class="container-formulario">
-                <form>
-                    <label class="font-estilo" for="nome">Nome completo</label>
-                    <input type="text" id="nome" class="input-padrao" required>
+        <div class="container-background-contato">
+            <picture>
+                <img class="background-contato" src="imagens/bg.jpg" alt=""><!--Foto de alexandre saraiva carniato no Pexels-->
+            </picture>
+            <section id="formulario">
+                <div class="container-formulario">
+                    <h2 class="titulo-padrao margin-zero">Entre em contato conosco!</h2>
+                    <form>
+                        <label class="subtitulo" for="nome">Nome completo</label>
+                        <input type="text" id="nome" class="input-padrao" required>
 
-                    <label class="font-estilo" for="email">email</label>
-                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                        <label class="subtitulo" for="email">Email</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-                    <label class="font-estilo" for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> 
+                        <label class="subtitulo" for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> 
 
-                    <label class="font-estilo" for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Olá, preciso dos seus serviços de..."></textarea>
+                        <label class="subtitulo" for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Olá, preciso dos seus serviços de..."></textarea>
 
-                    <fieldset>
-                        <legend class="titulo-padrao">Qual horário prefere ser atendido?</legend>
-                        <select>
-                            <option>Manhã</option>
-                            <option>Tarde</option>
-                            <option>Noite</option>
-                        </select>
-                    </fieldset>
+                        <fieldset class="border-none">
+                            <div class="container-atendimento">
+                                <legend class="titulo-padrao">Qual horário prefere ser atendido?<legend>
+                                <select class="selecao-estilo">
+                                    <option>Manhã</option>
+                                    <option>Tarde</option>
+                                    <option>Noite</option>
+                                </select>
+                            </div>
+                        </fieldset>
 
-                    <fieldset>
-                        <legend class="font-estilo">Como prefere o nosso contato?</legend>
+                        <fieldset class="border-none">
+                            <legend class="subtitulo">Como prefere o nosso contato?</legend>
 
-                        <label for="radio-email"><input id="radio-email" name="contato" type="radio" value="email">Email</label>
+                            <label for="radio-email"><input id="radio-email" name="contato" type="radio" value="email"> Email</label>
 
-                        <label for="radio-telefone"><input id="radio-telefone" name="contato" type="radio" value="telefone">Telefone</label>
-                        
-                        <label for="radio-whatsapp"><input id="radio-whatsapp" name="contato" type="radio" value="whatsapp" checked>Whatsapp</label>
-                        
-                        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                            <label for="radio-telefone"><input id="radio-telefone" name="contato" type="radio" value="telefone"> Telefone</label>
+                            
+                            <label for="radio-whatsapp"><input id="radio-whatsapp" name="contato" type="radio" value="whatsapp" checked> Whatsapp</label>
+                            
+                            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
 
-                        <input class="enviar" type="submit" value="Enviar formulário">
-                    </fieldset>
-                </form>
-                <h3 class="titulo-padrao">Horário de Atendimento</h3>></h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dia</th>
-                            <th>Horário</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Segunda</td>
-                            <td>8h ~ 20h</td>
-                        </tr>
-                        <tr>
-                            <td>Quarta</td>
-                            <td>8h ~ 20h</td>
-                        </tr>
-                        <tr>
-                            <td>Sexta</td>
-                            <td>8h ~ 20h</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+                            <input class="enviar" type="submit" value="Enviar formulário">
+                        </fieldset>
+                    </form>
+                    <hr class="margin-bottom">
+                    <h3 class="titulo-padrao">Horário de Atendimento</h3>></h3>
+                    <p class="paragrafo-padrao">Entre em contato para saber sobre o funcionamento nos feriados.</p>
+                    <table class="tabela-horario">
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>8h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>8h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>8h ~ 20h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer id="rodape">
