@@ -1,0 +1,6 @@
+.capa__imagem {
+   width: 100%;
+   height: calc(100vh - 184.8px);
+   object-fit: cover;
+   position: absolute;
+}

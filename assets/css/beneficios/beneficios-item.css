@@ -1,0 +1,7 @@
+.beneficios__item {
+   line-height: 1.7rem;
+}
+
+.beneficios__item:before {
+   content: "★ ";
+}

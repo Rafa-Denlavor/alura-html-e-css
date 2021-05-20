@@ -1,20 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200&display=swap');
 
-*{
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}*
 
-/* CSS da página Home*/
 
-/*CABECALHO*/
-
-#cabecalho {
-    background: #BBBBBB;
-    padding: 20px 0;
-}
 
 .container-cabecalho {
     position: relative;
@@ -23,12 +9,12 @@
 }
 
 .logo {
-    width: 110px;
+    width: 80px;
 }
 
 .nav-cabecalho {
     position: absolute;
-    top: 65px;
+    top: 50px;
     right: 0;
 }
 
@@ -174,17 +160,6 @@
 
 /*RODAPE*/
 
-#rodape {
-    text-align: center;
-    background: url(https://images.pexels.com/photos/5853391/pexels-photo-5853391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    padding: 20px 0;
-}
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px;
-}
 
 /* Css da página de Produtos*/
 
@@ -193,6 +168,7 @@
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+    height: calc(100vh - 250px);
 }
 
 .produtos li {
@@ -226,6 +202,10 @@
 
 .produto-descricao {
     font-size: 18px;
+}
+
+.produto-imagem {
+    width: 200px;
 }
 
 .produto-preco {
