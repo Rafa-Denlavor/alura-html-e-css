@@ -1,3 +1,25 @@
 #cabecalho {
    background-color: whitesmoke;
 }
+
+.cabecalho__aviso {
+   display: block;
+   background-color: black;
+   text-align: center;
+   padding: 0.6rem;
+}
+
+.cabecalho__span {
+   color: white;
+}
+
+.cabecalho__logo {
+   width: 7.5rem;
+}
+
+.cabecalho__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0.5rem;
+}
