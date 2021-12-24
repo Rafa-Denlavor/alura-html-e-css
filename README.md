@@ -8,7 +8,7 @@
 
 ### Tela inicial
 
-<img src="../img/home.png" alt="Tela inicial">
+<img src="docs/img/home.png" alt="Tela inicial">
 
 > Antigo website Barbearia Alura, reformulado para Froya Barbershop. Criado para desenvolver minhas habilidades em HTML e CSS.
 
