@@ -1,3 +1,16 @@
+.servicos__link {
+   color: white;
+   text-decoration: none;
+}
+
+i {
+   font-size: 2rem;
+}
+
+.servicos__link:hover {
+   color: black;
+}
+
 .servicos__botao {
    background-color: black;
    border: none;
@@ -5,6 +18,7 @@
    cursor: pointer;
    height: 3rem;
    padding: 1rem 2.5rem;
+   margin-top: 2rem;
 }
 
 .servicos__botao:hover {
