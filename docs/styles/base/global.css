@@ -6,13 +6,14 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-size: 16px;
+   font-size: 15px;
    color: #444;
 }*
 
 main {
    padding: 4rem 10rem;
    background-color: var(--secondary-color);
+   width: 100%;
 }
 .subtitle {
    font-weight: 800;
@@ -30,14 +31,14 @@ main {
    text-align: center;
 }
 
-.paragrafo {
+.paragraph {
    text-align: left;
    line-height: 1.8rem;
    padding: 0.7rem 0;
    
 }
 
-.container {
+.wrapper {
    display: flex;
    justify-content: center;
    width: 100%;
@@ -46,7 +47,7 @@ main {
    border-radius: 50%;
 }
 
-.texto__container {
+.content__container {
    width: 50%;
    padding: 5rem;
    display: flex;
@@ -56,7 +57,7 @@ main {
    background-color: whitesmoke;
 }
 
-.imagem__container {
+.image__container {
    width: 50%;
 }
 

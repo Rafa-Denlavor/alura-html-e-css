@@ -1,12 +1,12 @@
-.beneficios__item {
+.benefits__item {
   line-height: 1.7rem;
 }
 
-.beneficios__item:before {
+.benefits__item:before {
   content: " ★ ";
 }
 
-.beneficios__lista {
+.benefits__lista {
   list-style: none;
   padding-top: 1rem;
 }

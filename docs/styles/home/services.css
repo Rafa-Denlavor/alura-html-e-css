@@ -1,4 +1,4 @@
-.servicos__link {
+.services__link {
    color: white;
    text-decoration: none;
 }
@@ -7,11 +7,11 @@ i {
    font-size: 2rem;
 }
 
-.servicos__link:hover {
+.services__link:hover {
    color: #222;
 }
 
-.servicos__botao {
+.services__button {
    background-color: #222;
    border: none;
    border-radius: 5px;
@@ -21,7 +21,7 @@ i {
    margin-top: 2rem;
 }
 
-.servicos__botao:hover {
+.services__button:hover {
    background-color: #444;
    transition: 0.3s;
 }

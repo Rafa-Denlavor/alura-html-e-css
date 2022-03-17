@@ -1,15 +1,15 @@
-#rodape {
+#footer {
    text-align: center;
    background: url(https://images.pexels.com/photos/5853391/pexels-photo-5853391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
    padding: 20px 0;
 }
 
-.rodape__paragrafo {
+.footer__paragraph {
    color: #fff;
    font-size: 13px;
    margin: 20px;
 }
 
-.rodape__imagem {
+.footer__image {
    width: 9.5rem;
 }
